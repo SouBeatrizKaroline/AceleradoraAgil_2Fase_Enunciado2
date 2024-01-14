@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Fantástico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="menu">
+        <img src="img/foto_usuario.jpg" alt="Foto do Usuário">
+        <h2>NOME</h2>
+        <p>Informações sobre o usuário aqui.</p>
+
+        <div id="links">
+            <ul>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <h1>Lista de Tarefas</h1>
+
+        <div id="tarefas">
+            <div class="lista-tarefas" id="dia">
+                <h2>Dia</h2>
+                <ol id="lista-dia">
+                    <li>Exemplo 1</li>
+                    <li>Exemplo 2</li>
+                    <li>Exemplo 3</li>
+                </ol>
+                <input type="text" id="nova-tarefa-dia" placeholder="Nova Tarefa">
+                <button onclick="adicionarTarefa('dia')">Adicionar</button>
+            </div>
+
+            <div class="lista-tarefas" id="noite">
+                <h2>Noite</h2>
+                <ol id="lista-noite">
+                    <li>Exemplo 4</li>
+                    <li>Exemplo 5</li>
+                    <li>Exemplo 6</li>
+                </ol>
+                <input type="text" id="nova-tarefa-noite" placeholder="Nova Tarefa">
+                <button onclick="adicionarTarefa('noite')">Adicionar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
