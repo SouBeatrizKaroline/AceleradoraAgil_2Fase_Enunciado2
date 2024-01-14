@@ -6,6 +6,6 @@ function adicionarTarefa(periodo) {
         var novaTarefa = document.createElement('li');
         novaTarefa.textContent = inputElement.value;
         listaElement.appendChild(novaTarefa);
-        inputElement.value = ''; // Limpa o campo de input
+        inputElement.value = '';
     }
 }
